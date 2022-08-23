@@ -1,21 +1,135 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>pair</title>
-    <style>
-        p{
-            background-image: ('C:\wallpapers\pexels-fauxels-3183198.jpg');
-        }
-      .box {
-        background-color: pink;
-        color: #000;
-        border: 1px solid black;
-        margin: 15px;
-        padding: 15px;
-      }
-    </style>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>University website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    />
   </head>
   <body>
-    <div class="box ; p" class="p" style="text-align: center;";">user name</div>
-    <div class="box ; p" class="p" style="text-align: center;">password</div>
+    <section class="header">
+      <nav>
+        <!-- <a href="index.html"
+          ><img src="c:\projects\web site\image\logo.jpg"
+        /></a> -->
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMemu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMemu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Andhra's Biggest University</h1>
+        <p>Azadi Ka Amrit Mahotsav</p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!-- course -->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Undergraduate</h3>
+          <p>B.Tech Computer Science and Engineering<br>B.Tech Mechanical Engineering<br>BE Civil Engineering<br>BE Electronics and Communication Engineering<br>B.Tech Information Technology<br>B.Arch<br>B.Tech Marine Engineering	</p>
+        </div>
+        <div class="course-col">
+          <h3>Postgraduate</h3>
+          <p>M.Tech Electronics and Communication Engineering<br>M.Tech Software Engineering<br>M.Tech Civil Engineering<br>M.Tech Electrical and Electronics Engineering<br>M.Tech Mechanical Engineering<br>M.Plan<br>M.Tech Artificial Intelligence and Robotics<br></p>
+        </div>
+        <div class="course-col">
+          <h3>Doctorate</h3>
+          <p>Ph.D Metallurgical Engineering<br>Ph.D Geoengineering<br>Ph.D Instrumentation<br>Ph.D Electronics and Communication Engineering<br>Ph.D Architecture<br>Ph.D Chemical Engineering<br>Ph.D Computer Science and Engineering</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- campus -->
+    <section class="campus">
+      <h1>Our Campus</h1>
+      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="c:\projects\web site\image\south_campus.jpg" />
+          <div class="layer">
+            <h3>SOUTH</h3>
+          </div>
+        </div>
+          <div class="campus-col">
+            <img src="c:\projects\web site\image\north_campus.jpg"/>
+            <div class="layer">
+              <h3>NORTH</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- facilities -->
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="c:\projects\web site\image\library.jpg">
+          <h3>World Class Library</h3>
+          <!-- <p>Dr. V.S. Krishna Library has 60,000 sq. ft. (5574.18 sq. m.) of Carpet area. Besides the work and stock areas, each section has seating and reading facility to enable the user to choose and refer to the books comfortably.</p> -->
+        </div>
+        <div class="facilities-col">
+          <img src="c:\projects\web site\image\ground.jpg">
+          <h3>Largest Play Ground</h3>
+        </div>
+        <div class="facilities-col">
+          <img src="c:\projects\web site\image\hostels.jpg">
+          <h3>Hostels</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- call to action -->
+    <section class="cta">
+    <h1>Apply For The Admissions</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Andhra University was ranked 1001+ in the world by the Times Higher Education World University Rankings of 2020 and 351–400 in Asia.<br> The QS World University Rankings of 2020 ranked it 351–400 in Asia.<br> It was ranked 36th in India overall by the National Institutional Ranking Framework in 2020 and 19th among universities.<br>NIRF also ranked the Andhra University College of Pharmaceutical Sciences 34th in India in the pharmacy ranking.</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made wiht <i class="fa fa-heart-0"></i> by siva sagar</p>
+    </section>
+
+    <!-- javascript for memu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMemu() {
+        navLinks.style.right = "0";
+      }
+      function hideMemu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
